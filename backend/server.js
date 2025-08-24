@@ -4,7 +4,7 @@ import 'dotenv/config'
 import { callGenApi } from './gemini_api.js';
 
 const server = express();
-const PORT = process.env.SERVER_DEFAULT_PORT;
+const PORT = process.env.SERVER_DEFAULT_PORT || 3000;
 
 server.use(cors(), express.json());
 

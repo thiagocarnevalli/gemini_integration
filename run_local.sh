@@ -13,7 +13,7 @@ cd ..
 # --- Frontend Server Start ---
 echo "Starting frontend server..."
 cd front/
-serve -p 3001 &
+serve -p 80 &
 FRONTEND_PID=$!
 cd ..
 
